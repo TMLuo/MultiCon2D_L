@@ -4,4 +4,5 @@ This method is based on analytical solution under quasimagneto static field for 
 The possible impacts from magnetic core and air gaps is considered.
 
 ##Author
+
 Tianming Luo, TU Delft, HV group
