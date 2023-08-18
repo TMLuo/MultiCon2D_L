@@ -8,13 +8,13 @@ This code is built in MATLAB 2019b
 
 **Example**
 
-There are 2 conductors with 1mm radius. They locate at (0,0) and (2e-3,0), unit m, respectively.
+There are 2 conductors with 1mm radius. They locate at (0,0) and (2.2e-3,0), unit m, respectively.
 
-To calculate the impedance at 1MHz with opposite 1A in conductors, commend is listed as follow
+To calculate the impedance at 1MHz with opposite 1A in conductors, and the order is set to 5, commend is listed as follow
 
-x = [0;2e-3]; y = [0;0]; a = 1e-3*ones(2,1); f = 1e6; I = [1,-1];
+x = [0;2.2e-3]; y = [0;0]; a = 1e-3*ones(2,1); f = 1e6; I = [1,-1];
 
-Z = MultiConMatrix_L(x,y,a,'freq',f,'I',I);
+Z = MultiConMatrix_L(x,y,a,'freq',f,'I',I,'Nord',5);
 
 Result Z is 
 0.0879314016907529 + 0.654564457663242i
