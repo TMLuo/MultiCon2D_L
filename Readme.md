@@ -17,11 +17,15 @@ x = [0;2.2e-3]; y = [0;0]; a = 1e-3*ones(2,1); f = 1e6; I = [1,-1];
 Z = MultiConMatrix_L(x,y,a,'freq',f,'I',I,'Nord',5);
 
 Result Z is 
-0.08793 + 0.65456i
+
 0.08793 + 0.65456i
 
-Result from COMSOL
+0.08793 + 0.65456i
+
+Result from COMSOL is
+
 0.08836+0.65416i
+
 0.08836+0.65416i
 
 **Author:**
