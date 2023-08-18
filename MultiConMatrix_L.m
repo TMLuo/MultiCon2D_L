@@ -202,11 +202,11 @@ if flag == 0
     n1 = 1:N;
     totlen = units*num;
     
-    [matA0,matB0,countD] = mat_basic_v2(x,y,bx,by,N,Nref,k);
+    [matA0,matB0,countD] = mat_basic(x,y,bx,by,N,Nref,k);
     
     if type.gap
         numg = numel(gap.xg);
-        [matB2C,countD2C,matA2g,matB2g] = mat_gap_v2(gap.xg,gap.yg,x,y,bx,by,N,Nref,k,gap.len,gap.dire,gap.gtype);
+        [matB2C,countD2C,matA2g,matB2g] = mat_gap(gap.xg,gap.yg,x,y,bx,by,N,Nref,k,gap.len,gap.dire,gap.gtype);
         matR2C = zeros(totlen,numg);
         matR2C(1:units:totlen,:)= countD2C;
         matR2g = countD2C';
