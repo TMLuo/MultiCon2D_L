@@ -247,7 +247,6 @@ if flag == 0
     
     if type.correct
         [Acomp,Bcomp] = matComp(mark,ind,bound,x,y,matf(1,(ind-1)*units+1:ind*units,:),totlen);
-        %fprintf('Compensation for Boundary Potential Applied. \n');
     end
     
     idC = false(totlen,1);
@@ -275,7 +274,7 @@ if flag == 0
             paras.I = zeros(num,1,num2);
             if type.correct
                 type.correct = false;
-                %fprintf('Potential Correction only Work with Current. \n');
+                fprintf('Potential Correction only Work with Current. \n');
             end
         end
         nloop = 1;
@@ -342,7 +341,6 @@ if flag == 0
                 matH(numel(matB))=0;
             end
             matB = matB+matH;
-            %fprintf('Uniform External Magnetic Field Applied. \n');
         end
         %--- Part end ---
         
