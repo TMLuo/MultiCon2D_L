@@ -31,3 +31,5 @@ Result from COMSOL is
 **Author:**
 
 Tianming Luo, TU Delft, HV group
+
+https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/electrical-sustainable-energy/high-voltage-technologies/research/design-method-for-high-power-medium-frequency-transformers
